@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learn more about BizCare Connect, our mission, and the team behind the vision." />
+  <title>About Us - BizCare Connect Solution</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style/style.css" />
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- AOS Animation Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+
+  <!-- JavaScript -->
+  <script src="script/script.js" defer></script>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffafc;
+      color: #333;
+    }
+    .nav {
+  white-space: nowrap;
+}
+
+.nav-link {
+  font-size: 0.9rem;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+    .hero {
+      background-image: url("images/about-us-banner.png");
+      background-size: cover;
+      background-position: center;
+      padding: 100px 20px;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      background-color: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .section-title {
+      color: #4A148C;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .mission-section {
+      background-image: url("images/vin-logo.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 600px; 175px; /*width height*/
+      background-color: #fce4ec;
+      padding: 80px 20px;
+      z-index: 1;
+    }
+
+    .mission-text {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      text-align: center;
+      color: #4A148C;
+    }
+
+    .team-member {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .team-member img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      border: 3px solid #ba68c8;
+    }
+    .mission-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+     height: 100%;
+     background-color: rgba(255, 255, 255, 0.75); /* soft white overlay */
+    z-index: 0;
+    }
+
+    .mission-text,
+    .section-title {
+      position: relative;
+      z-index: 1;
+    }
+
+    .form-section {
+      padding: 50px 20px;
+      background-color: #fff0f6;
+    }
+
+    .form-section h3 {
+      text-align: center;
+      color: #6a1b9a;
+      margin-bottom: 20px;
+    }
+
+    .form-section form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .btn-purple {
+      background-color: #4A148C;
+      color: #fff;
+      border: none;
+    }
+
+    .btn-purple:hover {
+      background-color: #6a1b9a;
+    }
+
+    .confirmation-message {
+      text-align: center;
+      color: green;
+      font-weight: 600;
+      margin-top: 20px;
+    }
+   
+  </style>
+</head>
+
+<body>
+
+ <!-- Navbar -->
+<header class="navbar sticky-top" style="background-color: #4A148C;">
+  <div class="container d-flex justify-content-between align-items-center py-2 flex-wrap">
+    <nav class="d-flex align-items-center w-100 justify-content-between">
+      <ul class="nav flex-wrap">
+        <li class="nav-item"><a class="nav-link text-white" href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="services.html"><i class="fas fa-clipboard-list"></i> Services</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="pricing.html"><i class="fas fa-tags"></i> Pricing</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="howitworks.html"><i class="fas fa-cogs"></i> How It Works</a></li>
+        <li class="nav-item"><a class="nav-link text-white active" href="aboutus.html"><i class="fas fa-users"></i> About Us</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="contactus.html"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+      <a class="nav-link text-white fw-bold" href="login.html" style="background-color: #fbc02d; color: #6a1b9a; padding: 8px 15px; border-radius: 8px;">
+        Login/Sign Up
+      </a>
+    </nav>
+  </div>
+</header>
+
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Meet the Heart Behind BizCare</h1>
+      <p class="tagline">Empowering families, supporting small businesses, and building community through service.</p>
+    </div>
+  </section>
+
+  <!-- Mission -->
+  <section class="mission-section" data-aos="fade-up">
+    <h2 class="section-title text-center">Our Mission</h2>
+    <p class="mission-text">
+      At BizCare, our mission is to empower communities and businesses by providing seamless task-based solutions for individuals and tailored support for small businesses. We believe in building trust, fostering connections, and transforming lives through reliable, innovative services.
+    </p>
+  </section>
+
+  <!-- Why We Started -->
+  <section class="container my-5" data-aos="fade-up">
+    <h2 class="section-title text-center">Why We Started</h2>
+    <p class="text-center mission-text">
+      BizCare was born from a need—family helping family, stepping in when life demanded a village. What began as support for our own home became a passion for helping others handle life’s demands with ease, dignity, and a personal touch.
+    </p>
+  </section>
+
+  <!-- Team -->
+  <section class="container my-5" data-aos="fade-up">
+    <h2 class="section-title text-center">Meet Our Team</h2>
+    <div class="row">
+      <div class="col-md-3 team-member">
+        <img src="images/RaeQuel.png" alt="Rae-Quel Young" />
+        <h5>Rae-Quel Young</h5>
+        <p>Lead Service Provider</p>
+      </div>
+      <div class="col-md-3 team-member">
+        <img src="images/founder-pic.png" alt="Suzette-Nicole Young" />
+        <h5>Suzette-Nicole Young</h5>
+        <p>Founder & CEO</p>
+      </div>
+      <div class="col-md-3 team-member">
+        <img src="images/saint.png" alt="St. Clair Young" />
+        <h5>St. Clair Young</h5>
+        <p>Operations Manager</p>
+      </div>
+      <div class="col-md-3 team-member">
+        <img src="images/timothy.png" alt="Timothy Young" />
+        <h5>Timothy Young</h5>
+        <p>Team Manager</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="form-section" data-aos="fade-up">
+    <h3>Want to work with us or have a question?</h3>
+    <form action="https://formspree.io/f/xnnpjdyq" method="POST" id="aboutForm">
+      <div class="mb-3">
+        <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+      </div>
+      <div class="mb-3">
+        <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+      </div>
+      <div class="mb-3">
+        <textarea name="message" rows="4" class="form-control" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-purple">Send Message</button>
+      <div id="thankYouMessage" class="confirmation-message" style="display: none;">Thank you! We'll respond within 48 hours.</div>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-4" style="background-color: #4A148C; color: white;">
+    <p>&copy; 2025 BizCare Connect Solution, LLC. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Bootstrap Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- AOS Animation Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init();
+
+    // Thank You Message for Formspree
+    const form = document.getElementById("aboutForm");
+    const thankYou = document.getElementById("thankYouMessage");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const data = new FormData(form);
+      fetch(form.action, {
+        method: "POST",
+        body: data,
+        headers: { Accept: "application/json" }
+      }).then(response => {
+        if (response.ok) {
+          form.reset();
+          thankYou.style.display = "block";
+        }
+      });
+    });
+  </script>
+</body>
+</html>

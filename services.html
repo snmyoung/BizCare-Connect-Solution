@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Services - BizCare Connect</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  min-height: calc(100vh - 80px); /* adjust if footer height is taller */
+}
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffafc;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #f8bbd0;
+    }
+
+    .nav-link {
+      color: #4A148C !important;
+      font-weight: 500;
+    }
+
+    .nav-link:hover {
+      color: #d81b60 !important;
+    }
+
+    .btn-login {
+      background-color: white;
+      color: #f8bbd0;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    /* Section Styling */
+    section {
+      padding: 40px 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 1.8rem;
+      color: #6a1b9a;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .icon-box {
+      text-align: center;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .icon-box img {
+      max-width: 60px;
+      margin-bottom: 15px;
+    }
+
+    .icon-box h5 {
+      color: #4A148C;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .icon-box p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    footer {
+      background-color: #f8bbd0;
+      color: #4A148C;
+      text-align: center;
+      padding: 20px 0;
+      width: 100vw;
+      box-sizing: border-box;
+    }
+
+/* Social Media Icons */
+.social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #f8bbd0; /* Soft pink on hover */
+}
+
+
+.section-subtitle {
+  color: #6a1b9a;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(106, 27, 154, 0.2);
+}
+
+.service-section {
+  background-color: #fffafc;
+  border: 5px dashed #f8bbd0;
+  padding: 40px 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.03);
+}
+
+.service-box {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.service-box img {
+  max-height: 60px;
+  margin-bottom: 10px;
+}
+
+.service-box p {
+  margin: 0;
+  font-weight: 600;
+  color: #6a1b9a;
+}
+
+.dc-card {
+  background-color: #fce4ec; /* soft pink */
+}
+
+.md-card {
+  background-color: #e1f5fe; /* baby blue */
+}
+
+.va-card {
+  background-color: #f3e5f5; /* soft lavender */
+}
+
+.ny-card {
+  background-color: #fff9c4; /* pale yellow */
+}
+.md-card {
+  background-color: #f3e5f5; /* soft lavender */
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(186, 104, 200, 0.2);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.va-card {
+  background-color: #e1f5fe; /* soft sky blue */
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(129, 212, 250, 0.2);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.ny-card {
+  background-color: #fff9c4; /* soft yellow */
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(255, 235, 59, 0.2);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.service-box:hover {
+  transform: scale(1.03);
+}
+
+/* Core Services Styling */
+.core-services {
+  background-color: #f3e5f5;
+  padding: 40px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  margin: 30px auto;
+}
+
+.core-services .icon-box {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+
+.core-services .icon-box:hover {
+  transform: translateY(-5px);
+}
+
+.core-services h5 {
+  color: #6a1b9a;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.core-services p {
+  font-size: 0.95rem;
+  color: #444;
+}
+/* Custom Requests Styling */
+.custom-section {
+  background-color: #f3fdf4; /* soft honeydew */
+  padding: 40px 20px;
+  border-radius: 12px;
+  margin: 40px auto;
+}
+
+.custom-box {
+  background-color: #b39ddb; /* soft lavender */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.custom-box h4 {
+  color: #4a148c;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.custom-box p {
+  color: #333;
+  font-size: 1rem;
+}
+
+.custom-section {
+    margin-bottom: 40px;
+}
+
+/* Our Services Cards */
+.service-card {
+  background-color: #fbc02d;
+  color: #4a148c;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Why Choose BizCare Cards */
+.why-us-card {
+  background-color: #ffffff;
+  color: #333;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+
+  </style>
+</head>
+<body>
+  
+    <main>
+
+ <!-- Navbar -->
+  <header class="navbar sticky-top">
+    <div class="container-fluid d-flex justify-content-between align-items-center py-2 px-3">
+      <ul class="nav flex-nowrap">
+        <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="services.html"><i class="fas fa-clipboard-list"></i> Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="pricing.html"><i class="fas fa-tags"></i> Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="howitworks.html"><i class="fas fa-cogs"></i> How It Works</a></li>
+        <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fas fa-users"></i> About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+      <a class="btn btn-login ms-2" href="login.html">Login/Sign Up</a>
+    </div>
+  </header>
+
+  <div style="margin-top: 35px;"></div>
+
+  
+ <!-- Service Areas -->
+
+ <div class="row g-4 text-center justify-content-center">
+    <div class="col-6 col-sm-4 col-md-3">
+      <div class="service-box dc-card">
+        <img src="images/washington-dc-icon.png" alt="Washington, DC" class="img-fluid" />
+        <p>Washington, DC</p>
+      </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3">
+      <div class="service-box md-card">
+        <img src="images/maryland-icon.png" alt="Maryland" class="img-fluid" />
+        <p>Maryland</p>
+      </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3">
+      <div class="service-box va-card">
+        <img src="images/virginia-icon.png" alt="Virginia" class="img-fluid" />
+        <p>Virginia</p>
+      </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3">
+      <div class="service-box ny-card">
+        <img src="images/new-york-icon.png" alt="New York" class="img-fluid" />
+        <p>New York</p>
+      </div>
+    </div>
+  </div>
+  </section>
+  
+<div style="margin-top: 30px;"></div>
+        
+<!-- Core Services Section -->
+<section class="core-services text-center">
+    <h2 class="section-title"><i class="fas fa-wand-magic-sparkles"></i> Core Services</h2>
+    <div class="container">
+      <div class="row g-4 justify-content-center">
+        <!-- House Cleaning -->
+        <div class="col-md-4">
+          <div class="service-card p-4">
+            <img src="images/house-cleaning-blog.png" alt="House Cleaning" class="img-fluid mb-3" />
+            <h5 class="text-purple">House Cleaning</h5>
+            <p>Thorough cleaning services for homes, apartments, and move-ins/outs.</p>
+          </div>
+        </div>
+  
+        <!-- Business Support -->
+        <div class="col-md-4">
+          <div class="service-card p-4">
+            <img src="images/business-support-icon.png" alt="Business Support" class="img-fluid mb-3" />
+            <h5 class="text-purple">Business Support</h5>
+            <p>Admin tasks, document help, virtual or onsite support when you need it most.</p>
+          </div>
+        </div>
+  
+        <!-- Handyman Services -->
+        <div class="col-md-4">
+          <div class="service-card p-4">
+            <img src="images/handyman-and-house-repair-blog.png" alt="Handyman Services" class="img-fluid mb-3" />
+            <h5 class="text-purple">Handyman Services</h5>
+            <p>Minor repairs, home fixes, assembly, and everyday tasks around the house.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+   <!-- Custom Requests Section -->
+     <section class="custom-section text-center">
+    <h2 class="section-title">
+      <i class="fas fa-pen-nib"></i> Custom Requests
+    </h2>
+    <div class="custom-box">
+      <img src="images/custom-request-icon.png" alt="Custom Request" class="img-fluid" width="60">
+      <h4>Tell Us What You Need</h4>
+      <p>
+        Whether it’s a last-minute help, a unique business setup, or a one-time surprise task — we’ll work with you to make it happen.
+      </p>
+      </div>
+  
+      <div style="margin-bottom: 10px;"></div><!--buffer between content and footer-->
+    </main>
+
+  <!-- Footer -->
+  <footer>
+     <p>&copy; 2025 BizCare Connect Solution, LLC. All Rights Reserved.</p>
+  <div class="social-icons mt-2">
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+  </div>
+
+  </footer>
+
+</body>
+</html>
